@@ -380,7 +380,7 @@ async def stop(client, m: Message):
         except Exception as e:
             await m.reply(f"**هناك خطأ ** \n`{e}`")
     else:
-        await m.reply("**❌ لايوجد هناك اغنيه شغاله !**")
+        await m.reply("**❌ لايوجد هناك رقيه شغاله !**")
 @Client.on_message(filters.command(["استئناف"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def pause(client, m: Message):
@@ -393,7 +393,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"**هناك خطأ ** \n`{e}`")
     else:
-        await m.reply("** ❌ لايوجد اغنيه مشتغله !**") 
+        await m.reply("** ❌ لايوجد رقيه مشتغله !**") 
 @Client.on_message(filters.command(["ايقاف_الاستئناف"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def resume(client, m: Message):
