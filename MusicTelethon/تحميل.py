@@ -39,7 +39,7 @@ async def song(client, message: Message):
         return
     c_time = time.time()
     capy = f"""
-**🏷️ اسم الاغنيه :** [{thum}]({mo})
+**🏷️ اسم الرقيه :** [{thum}]({mo})
 **🎧 طلب من :** {message.from_user.mention}
 """
     file_stark = f"{ytdl_data['id']}.mp3"
