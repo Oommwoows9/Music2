@@ -33,7 +33,7 @@ async def restart(client, m: Message):
     await loli.edit("**✅ تم اعاده تشغيل موسيقى تليثون**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-@Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["الاوامر","اوامر الرقيه"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
